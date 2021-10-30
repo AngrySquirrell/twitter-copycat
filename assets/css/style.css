@@ -141,23 +141,14 @@ main{
 }
 
 main section{
-  width: 598px;
+  width: 600px;
   height: 53px;
   display: flex;
   flex-direction:column;
-  /* background-color:magenta;  */
 }
 
 main section:hover{
   cursor: pointer;
-}
-
-#accueil-main{
-  padding-right:16px;
-  padding-left:16px;
-  font-size:19px;
-  font-weight:bold;
-  /* background-color: pink; */
 }
 
 #white{
@@ -191,11 +182,28 @@ textarea {
 .border{
   padding:2px 16px 2px 16px;
 }
-
-
-.star {
- float: right;
+.tktjegere{
+  padding-right:16px;
+  padding-left:16px;
+  font-size:19px;
+  font-weight:bold;
+  width: 600px;
+  height: 53px;
 }
+#accueil-main{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  width: 510px;
+  height: 53px;
+  text-align: center;
+}
+#star-main{
+
+} 
+
+
+
 
 
 
@@ -213,6 +221,7 @@ textarea {
   font-weight: 800;
   background-color: #15181c;
   border-radius: 15px;
+  color: #D9D9D9;
 }
 
 .tendances_pour_vous__colonne{
@@ -293,7 +302,7 @@ tendances_pour_vous__colonne_bas{
 }
 
 .suggestions__head{
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
   color: #D9D9D9;
 }
@@ -305,16 +314,17 @@ tendances_pour_vous__colonne_bas{
 }
 
 .suggestions__pseudo{
-  
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   color: #D9D9D9;
+  font-family: inherit;
 }
 
 .suggestions__arobase{
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   color: #6E767D;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .suggestions__logo_utilisateur{
@@ -347,29 +357,21 @@ tendances_pour_vous__colonne_bas{
   background-color:rgba(255,255,255,0.8); 
 }
 
+.politique{
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(110,118,125);
+  cursor: pointer;
+  font-size:13px;
+}
 
+a:hover {
+  text-decoration: underline;
+  font-size:13px;
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #full-right{
+  
+  /* 
+#full-right{
   position: fixed;
   margin-left:31%+620px;
 } */
