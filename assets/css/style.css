@@ -4,7 +4,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body{
@@ -15,8 +15,14 @@ body{
   justify-content: space-between;
 }
 
+.pp_round{
+border-radius: 50%;
+width: 10%;
+}
 
 /*BARRE DE GAUCHE*/
+
+/* PARTIE DE NAO QUI FAIT NIMP EN FULL SCREEN
 
 header{
   width: 31%;
@@ -27,17 +33,18 @@ header{
   background-color: black;
 }
 
-a{
+header a{
   text-decoration: none;
   color: white;
   border-radius: 9999px;
   padding: 12px;
+  padding-right: 20px;
   background-color: black;
   transition-duration: .2s;
 }
 
-a:hover{
-  background-color: grey;
+header a:hover{
+  background-color: rgba(40, 40, 40, 0.7);
   transition-duration: .2s;
   
 }
@@ -54,64 +61,141 @@ a:hover{
 }
 
 .navbar_element{
-  margin-bottom: 10%;
+  margin-bottom: 5px;
   right: 0;
   text-decoration: none;
   color: white;
   font-size: 20px;
   width: 159px;
+  height: 50px;
   padding: 12px;
 }
 
 
-i{
-  margin-right: 10px;
+
+header i{
+  margin-right: 20px;
 }
 
 
+#tweeter_but{
+  width: 252px;
+  height: 52px;
+  margin-top: 5px;
+  border-radius: 169px;
+  background-color:#1c97ea;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1280px)
+{
+.navbar-accueil{
+  width: 64px;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  background-color: black;
+  right: 30px;
+  white-space: nowrap;
+}
+
+.txt_responsive{
+  display: none;
+  font-size: 0px;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  border-radius: 9999px;
+  background-color: black;
+  transition-duration: .2s;
+  padding-right: 0px;
+}
+
+#tweeter_but{
+  width: 53px;
+  height: 52px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 169px;
+  background-color:#1c97ea;
+  display: flex;
+  justify-content: center;
+}
+
+
+*/
+               
+
+         
 
 
 
-/*                                  */
+/*     Barre du millieu Guitoune     */
 
 main{
-  margin-left:  31%;
-  display: flex;
-  flex-direction: column;
+  margin-left:31%;
 }
 
 main section{
   width: 598px;
   height: 53px;
-  border : solid 1px #4b4b4b;
-  border-top-color: black;
   display: flex;
-  align-items: center;
+  flex-direction:column;
+  /* background-color:magenta;  */
 }
+
 main section:hover{
   cursor: pointer;
 }
+
 #accueil-main{
   padding-right:16px;
   padding-left:16px;
   font-size:19px;
   font-weight:bold;
+  /* background-color: pink; */
 }
+
 #white{
   color:#fff;
 }
 
-.accueil{
-  padding-left : 16px;
-  padding-right : 16px;
-  border : 2px #959697;
-  box-sizing: border-box;
-  height : 53px;
-  width: 100% ;
-  position: relative;
-  align-content: center;
+.boxed{
+  border : solid 1px #4b4b4b;
+  border-top-color: black;
 }
 
+.cursor{
+  cursor: pointer;
+}
+
+textarea {
+  max-width: 100%;
+  line-height: 1.5;
+  background-color:black;
+  color:white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  resize:none;
+  border-bottom: solid 1px #4b4b4b;
+}
+.zone-de-text{
+  height: 160px;
+  border : solid 1px #4b4b4b;
+  border-top-color: black;
+}
+.border{
+  padding:2px 16px 2px 16px;
+}
+
+
+.star {
+ float: right;
+}
 
 
 
@@ -119,11 +203,15 @@ main section:hover{
 
 /*BARRE DE DROITE*/
 
+/* BARRE DE RECHERCHE*/
+
+
+/* TENDANCES*/
 .tendances_pour_vous {
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 800;
-  background-color:#272727;
+  background-color: #15181c;
   border-radius: 15px;
 }
 
@@ -132,7 +220,20 @@ main section:hover{
   border-bottom: none;
 }
 
-.tendances_pour_vous__head{ 
+tendances_pour_vous__colonne_bas{
+  border-radius: 15px;
+}
+
+.hollow:hover{
+  background-color:#1c1f23;
+  cursor: pointer;
+}
+
+.hollow_bas:hover{
+  background-color:#1c1f23;
+  cursor: pointer;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .tendances_pour_vous__categorie{
@@ -157,8 +258,118 @@ main section:hover{
 
 .positionnement{
   display: grid;
-  grid-template-columns: 275px auto 350px;
-  margin: 0 auto;
-
+  grid-template-columns: 300px auto 350px;
+  margin: 20px auto;
 }
 
+#en_savoir_plus{
+  color:#1D98F0;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+/* SUGGESTIONS */
+
+.suggestions{
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #15181c;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  width:300px;
+}
+
+.suggestions__colonne{
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.suggestions__colonne:last-child {
+  border-bottom: none;
+}
+
+.suggestions__head{
+  font-size: 19px;
+  font-weight: bold;
+  color: #D9D9D9;
+}
+
+.suggestions__content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.suggestions__pseudo{
+  
+  font-size: 15px;
+  font-weight: 400;
+  color: #D9D9D9;
+}
+
+.suggestions__arobase{
+  font-size: 15px;
+  font-weight: 700;
+  color: #6E767D;
+}
+
+.suggestions__logo_utilisateur{
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding:5px;
+}
+
+.suggestions__bouton{
+  color: black;
+  background-color:white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 5px;
+  width:60px;
+  height:30px;
+  text-align: center;
+}
+
+.hollow_suggestions:hover{
+  cursor: pointer;
+  background-color:rgba(255,255,255,0.8); 
+}
+
+.hollow_bouton:hover{
+  cursor: pointer;
+  background-color:rgba(255,255,255,0.8); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #full-right{
+  position: fixed;
+  margin-left:31%+620px;
+} */

@@ -24,61 +24,100 @@
             </div>
             <div class="navbar_element">
                <a href="#">
-                 <i class="fas fa-home" class="icon"></i>Accueil
+                 <i class="fas fa-home" class="icon"></i><span class='txt_responsive'>Accueil</span>
                 </a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="fas fa-hashtag"></i>Explorer</a>
+              <a href="#"><i class="fas fa-hashtag"></i><span class='txt_responsive'>Explorer</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="fas fa-bell"></i>Notifications</a>
+              <a href="#"><i class="fas fa-bell"></i><span class='txt_responsive'>Notifications</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="far fa-envelope"></i>Messages</a>
+              <a href="#"><i class="far fa-envelope"></i><span class='txt_responsive'>Messages</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="far fa-list-alt"></i>Signets</a>
+              <a href="#"><i class="far fa-list-alt"></i><span class='txt_responsive'>Signets</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="far fa-list-alt"></i>Listes</a>
+              <a href="#"><i class="far fa-list-alt"></i><span class='txt_responsive'>Listes</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="far fa-user"></i>Profile</a>
+              <a href="#"><i class="far fa-user"></i><span class='txt_responsive'>Profile</span></a>
             </div>
             <div class="navbar_element">
-              <a href="#"><i class="fas fa-ellipsis-h"></i>Plus</a>
+              <a href="#"><i class="fas fa-ellipsis-h"></i><span class='txt_responsive'>Plus</span></a>
             </div>
-            <div class="navbar_element">
-              <a href="#"></a>
-              <span>Tweeter</span>
+            <div>
+              <a href="#" id="tweeter_but"><span class='txt_responsive'>Tweeter</span></a>
             </div>
         </div>
       </div>
     </header>
+    
+    <!-- Millieu Guillaume -->
     <main>
-      <section>
+      <section class="boxed"> <!-- Div acceuil top -->
         <div id="accueil-main">
           <p>Accueil</p>
+          <i class="star far fa-star"></i> 
         </div>
-        <div>
-          <a href='#'></a>
+      </section>
+      <section class="">
+        <div class="zone-de-text">
+          <img class="suggestions__logo_utilisateur " src="assets/img/pp_gaut123456.jpg" alt="pp_gaut">
+          <textarea  name="what's up?" cols="51" placeholder="Quoi de neuf ?" minlength="5" maxlength="280"></textarea>
         </div>
+      </section>
+      <section class="boxed tweet1 cursor">
+
+      </section>
+      <section class="boxed tweet2 cursor">
+        
+      </section>
+      <section class="boxed tweet3 cursor">
+        
+      </section>
+      <section class="boxed tweet4 cursor">
+        
+      </section>
+      <section class="boxed tweet5 cursor">
+        
+      </section>
+      <section class="boxed tweet6 cursor">
+        
+      </section>
+      <section class="boxed tweet7 cursor">
+        
+      </section>
+      <section class="boxed tweet8 cursor">
+        
+      </section>
+      <section class="boxed tweet9 cursor">
+        
       </section>
     </main>
 
+
+
+
+
+
+
+
 <!--MATHIS BARRE DE DROITE-->
-    <section>
 
-      <div class="positionnement">
-        <div class="tendances_pour_vous">
-          <div class="tendances_pour_vous__colonne">
-            <div class="tendances_pour_vous__head">
-              Tendances pour vous
-      </div>
+<section id="full-right">
 
-    
-    <div class="tendances_pour_vous__colonne">
-      <div class="tendances_pour_vous__categorie">
+<!--MATHIS BLOCK TENDANCES-->
+<div class="positionnement">
+  <div class="tendances_pour_vous ">
+    <div class="tendances_pour_vous__colonne hollow_suggestion">
+      Tendances pour vous
+    </div>
+
+    <div class="tendances_pour_vous__colonne hollow">
+      <div class="tendances_pour_vous__categorie ">
         Tendance dans la catégorie France
       </div>
       <div class="tendances_pour_vous__nom">
@@ -87,8 +126,9 @@
       <div class="tendances_pour_vous__stat">
         333 k Tweets
       </div>
+    </div>
 
-    <div class="tendances_pour_vous__colonne">
+    <div class="tendances_pour_vous__colonne hollow">
       <div class="tendances_pour_vous__categorie">
         Divertissement · Tendances
       </div>
@@ -98,11 +138,103 @@
       <div class="tendances_pour_vous__stat">
         1,5 M Tweets
       </div>
+    </div>
 
+    <div class="tendances_pour_vous__colonne hollow">
+      <div class="tendances_pour_vous__categorie">
+        Mode · Tendances
       </div>
-    </section>
-  </body>
+      <div class="tendances_pour_vous__nom">
+        HOT SOCKS
+      </div>
+      <div class="tendances_pour_vous__stat">
+        156,3 M Tweets
+      </div>
+    </div>
+
+    <div class="tendances_pour_vous__colonne hollow">
+      <div class="tendances_pour_vous__categorie">
+        Etudes · Tendances
+      </div>
+      <div class="tendances_pour_vous__nom">
+        12/20 en MATHS OMG
+      </div>
+      <div class="tendances_pour_vous__stat">
+        3 Tweets
+      </div>
+    </div>
+
+    <div class="tendances_pour_vous__colonne hollow_bas">
+      <a href="#" id="en_savoir_plus">Voir plus</a>
+    </div>
+  </div>
+</div>
+
+
+<!--MATHIS BBLOCK SUGGESTIONS-->
+<div class="suggestions">
+  <div class="suggestions__colonne">
+    <div class="suggestions__head">
+      Suggestions
+    </div>  
+  </div>
+  
+  <div class="suggestions__colonne hollow">
+    <img class="suggestions__logo_utilisateur" src="./assets/img/pp_moudjanito.png"/>
+      <div class="suggestions__content">
+        <div>
+          <div class="suggestions__pseudo">
+            KC Moudjane
+          </div>
+          <div class="suggestions__arobase">
+            @moudjanito
+          </div>
+        </div>
+        <div class="suggestions__bouton hollow_bouton">
+          Suivre
+        </div>
+      </div>      
+    </div>
+
+    <div class="suggestions__colonne hollow_bas">
+      <img class="suggestions__logo_utilisateur" src="./assets/img/pp_moudjanito.png"/>
+        <div class="suggestions__content">
+          <div>
+            <div class="suggestions__pseudo">
+              KC Moudjane
+            </div>
+          <div class="suggestions__arobase">
+            @moudjanito
+          </div>
+        </div>
+      <div class="suggestions__bouton hollow_bouton">
+        Suivre
+      </div>
+    </div>
+  </section>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
