@@ -59,11 +59,12 @@ header a:hover{
 }
 
 .navbar_element{
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   right: 0;
   text-decoration: none;
   color: white;
   font-size: 20px;
+  font-weight: bold;
   width: 159px;
   height: 50px;
   padding: 12px;
@@ -89,7 +90,7 @@ header i{
 
 .navbar_element_bas{
   position: relative;
-  margin-top: 110%;
+  margin-top: 100%;
   display: flex;
   flex-direction: row;
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -174,52 +175,19 @@ header a{
 
 
 
-/*
-@media screen and (max-width: 1280px)
-{
-.navbar-accueil{
-  width: 64px;
-  height: 100%;
-  color: white;
-  overflow: hidden;
-  position: absolute;
-  background-color: black;
-  right: 30px;
-  white-space: nowrap;
-}
-
-.txt_responsive{
-  display: none;
-  font-size: 0px;
-}
-
-header a{
-  text-decoration: none;
-  color: white;
-  border-radius: 9999px;
-  background-color: black;
-  transition-duration: .2s;
-  padding-right: 0px;
-}
-
-#tweeter_but{
-  width: 53px;
-  height: 52px;
-  margin-top: 5px;
-  margin-left: 10px;
-  border-radius: 169px;
-  background-color:#1c97ea;
-  display: flex;
-  justify-content: center;
-}
-
-
-*/
-
-
-
 
 /*     Barre du millieu Guitoune     */
+
+.roll{
+  margin-top:53px;
+}
+
+.first-plan{
+  z-index: 10;
+  background: rgba(0, 0, 0, 1);
+  opacity: 1;
+  position: fixed;
+}
 
 main{
   margin-left:31%;
@@ -297,14 +265,6 @@ textarea {
   height: 53px;
   position:fixed ;
 }
-#accueil-main{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  width: 510px;
-  height: 53px;
-  text-align: center;
-}
 .bouton_tweeter{
   height:38px ;
   width:92px ;
@@ -326,11 +286,6 @@ textarea {
   font-weight:500; 
 }
 
-.tweet1{
-  height:395.5px ;
-  padding: 12px 16px 0px 16px;
-  font-size:15px;
-}
 .hashtag{
   color:#1D9BF0;
 }
@@ -338,26 +293,82 @@ textarea {
   text-decoration: underline ;
 }
 
+#star-main {
+float: right;
+}
+
 .imgtweet1{
-  float: left;
   width:504px;
   height:283.5px;
   border-radius:12px;
   border:solid 1px #4b4b4b;
-  margin-left:48.5px;
-  padding-right:12px;
-}
-.auteur_tweet1{
-  
+  margin-top:10px; 
 }
 
+/*********************/
+/** khezbnfoiaungrpo**/
+/*********************/
 
+.tweet {
+  display: flex;
+  border-left: 1px solid #4b4b4b;
+  border-right: 1px solid #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+  padding: 10px 15px;
+}
+
+.tweet:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.tweet a {
+  color: #1b94e0;
+  text-decoration: none;
+}
+
+.tweet a:hover {
+  text-decoration: underline;
+}
+
+.tweet__author-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet__header {
+  display: flex;
+}
+
+.tweet__author-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.tweet__author-slug {
+  color: grey;
+  font-size: 15px;
+}
+
+.tweet__publish-time {
+  margin-left: 5px;
+  color: grey;
+}
+
+.tweet__image {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
 
 
 
 /*   BARRE DE DROITE   */
 
-/*   Barre de recherche   */
 
 
 /*   Tendances pour vous   */
@@ -529,4 +540,33 @@ tendances_pour_vous__colonne_bas{
   height: 100%;
   position: fixed;
   left: calc(31% + 620px);
+}
+
+/*   Barre de recherche   */
+
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -287.5px;
+    top: 1px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;  
+}
+
+.searchbox{
+  padding-left: 43px; 
+  background-color:#202327;
+  border:solid 1px #202327;
+  border-radius: 24px;
+  color:white;
+  height:42px ;
+  width: 300px;
+  font-size:16px ;
+  margin-top:12px;
+}
+
+.searchbox:focus{
+  border-color:#1D9BF0;
+  background-color: black;
 }
