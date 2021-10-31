@@ -55,16 +55,19 @@ header a:hover{
   position: absolute;
   background-color: black;
   right: 0;
+  font-weight: bold;
   white-space: nowrap;
 }
+
+
 
 .navbar_element{
   margin-bottom: 1px;
   right: 0;
   text-decoration: none;
   color: white;
+  font-weight: 500;
   font-size: 20px;
-  font-weight: bold;
   width: 159px;
   height: 50px;
   padding: 12px;
@@ -237,34 +240,44 @@ textarea {
   border-radius: 50px;
   margin-right: 10px;
   padding:5px;
+  margin-bottom:24px;
+  margin-top:5px;
+  
 }
 
-.under_textarea{
-  width: 598px;
-  height:250px;
-  margin-top:20px;
-}
+
 .zone-de-text{
   height: 150px;
   width:598px;
+  margin-top:8px;
   border-left: solid 1px #4b4b4b;
   border-right:solid 1px #4b4b4b;
+  padding-left:20px;
   /* border : solid 1px #4b4b4b;
   border-top-color: black; */
   /* background-color: red; */
 }
+
 .border{
   padding:2px 16px 2px 16px;
 }
 .tktjegere{
   padding-right:16px;
   padding-left:16px;
+  padding-top:11px;
   font-size:19px;
   font-weight:bold;
   width: 598px;
   height: 53px;
   position:fixed ;
+  float: right;
+  display:flex;
 }
+.star{
+  margin-top:4px;
+  margin-left:480px;
+}
+
 .bouton_tweeter{
   height:38px ;
   width:92px ;
@@ -275,10 +288,37 @@ textarea {
   padding-top:8px;
   font-size: 18px;
   font-weight:bold;
-  margin-bottom:12px;
-  margin-left:490px;
-
+  display: inline-block;
+  margin-left: 89.61px;
+  margin-right:10px;
+  cursor: default;
 }
+
+#txticon-area{
+  width: 598px;
+  height:250px;
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  white-space: nowrap;
+  background-color: blue;
+}
+
+.essai{
+  display:flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+ 
+.icons_tweeter {
+  color: rgb(29, 155, 240);
+  width: 25px;
+  height: 25px;
+  margin-left:34px;
+  margin-bottom:30px;
+  display: inline-block;
+}
+
 .grey{
   color:grey;
 }
@@ -305,15 +345,71 @@ float: right;
   margin-top:10px; 
 }
 
+.reactions{
+  width: 598px;
+  height: 30px;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-weight: 500;
+}
+
+.comment{
+  border-radius:50%;
+  height:32px ;
+  width:32px ;
+  text-align: left;
+}
+.comment:hover{
+  background-color:rgba(27, 148, 224 ,0.15);
+  color:rgb(27, 148, 224 );
+}
+.rt{
+  border-radius:50%;
+  height:32px ;
+  width:32px ;
+  text-align: left;
+}
+.rt:hover{
+  background-color:rgba(35, 212, 0, 0.15);
+  color:rgb(35, 212, 0);
+}
+.like{
+  border-radius:50%;
+  height:32px ;
+  width:32px ;
+  margin-bottom: 20px;
+}
+.like:hover{
+  background-color:rgba(252, 21, 213 ,0.15);
+  color:rgb(252, 21, 213);
+}
+.share{
+  border-radius:50%;
+  height:32px ;
+  width:32px ;
+  text-align: left;
+}
+.share:hover{
+  background-color:rgba(27, 148, 224 ,0.15);
+  color:rgb(27, 148, 224 );
+}
+
 /*********************/
 /** khezbnfoiaungrpo**/
 /*********************/
 
 .tweet {
   display: flex;
+  flex-direction: column;
+}
+
+.tweet-content{
+  display: flex;
   border-left: 1px solid #4b4b4b;
   border-right: 1px solid #4b4b4b;
-  border-bottom: 1px solid #4b4b4b;
+  /* border-bottom: 1px solid #4b4b4b; */
   padding: 10px 15px;
 }
 
@@ -365,6 +461,12 @@ float: right;
   margin-top: 10px;
 }
 
+.icons_t{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+}
 
 
 /*   BARRE DE DROITE   */
@@ -545,13 +647,13 @@ tendances_pour_vous__colonne_bas{
 /*   Barre de recherche   */
 
 #filtersubmit {
-    position: relative;
-    z-index: 1;
-    left: -287.5px;
-    top: 1px;
-    color: #7B7B7B;
-    cursor:pointer;
-    width: 0;  
+  position: relative;
+  z-index: 1;
+  left: -287.5px;
+  top: 1px;
+  color: #7B7B7B;
+  cursor:pointer;
+  width: 0;  
 }
 
 .searchbox{
