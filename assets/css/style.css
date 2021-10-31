@@ -22,7 +22,6 @@ width: 10%;
 
 /*BARRE DE GAUCHE*/
 
-/* PARTIE DE NAO QUI FAIT NIMP EN FULL SCREEN
 
 header{
   width: 31%;
@@ -46,7 +45,6 @@ header a{
 header a:hover{
   background-color: rgba(40, 40, 40, 0.7);
   transition-duration: .2s;
-  
 }
 
 .navbar-accueil{
@@ -86,8 +84,97 @@ header i{
   background-color:#1c97ea;
   display: flex;
   justify-content: center;
+  font-size: 20px;
 }
 
+.navbar_element_bas{
+  position: relative;
+  margin-top: 110%;
+  display: flex;
+  flex-direction: row;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 80;
+  border-radius: 169px;
+  background-color: black;
+}
+
+.navbar_element_bas:hover{
+  background-color: rgba(40, 40, 40, 0.7);
+  transition-duration: .2s;
+}
+
+.navbar_element_bas_content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar_element_bas_pseudo{
+  font-size: 15px;
+  font-weight: bold;
+  color: #D9D9D9;
+  font-family: inherit;
+}
+
+.navbar_element_bas_arobase{
+  font-size: 15px;
+  font-weight: 400;
+  color: #6E767D;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar_element_bas_logo{
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding:5px;
+}
+
+@media screen and (max-width: 1280px)
+{
+.navbar-accueil{
+  width: 64px;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  background-color: black;
+  right: 30px;
+  white-space: nowrap;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  border-radius: 9999px;
+  background-color: black;
+  transition-duration: .2s;
+  padding-right: 0px;
+}
+
+.txt_responsive{
+  display: none;
+  font-size: 0px;
+}
+
+#tweeter_but{
+  width: 53px;
+  height: 52px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 169px;
+  background-color:#1c97ea;
+  display: flex;
+  justify-content: center;
+}
+}
+
+
+
+
+/*
 @media screen and (max-width: 1280px)
 {
 .navbar-accueil{
@@ -128,9 +215,7 @@ header a{
 
 
 */
-               
 
-         
 
 
 
@@ -138,13 +223,13 @@ header a{
 
 main{
   margin-left:31%;
+  width:598px;
 }
 
 main section{
-  width: 600px;
+  width: 598px;
   height: 53px;
   display: flex;
-  flex-direction:column;
 }
 
 main section:hover{
@@ -165,19 +250,40 @@ main section:hover{
 }
 
 textarea {
-  max-width: 100%;
+  /* max-width: 100%; */
   line-height: 1.5;
   background-color:black;
   color:white;
   font-size: 20px;
   letter-spacing: 1px;
   resize:none;
+  outline: none;
+  margin-top:8px;
+}
+/* textarea:active {
   border-bottom: solid 1px #4b4b4b;
+} */
+.tweet_logo_utilisateur{
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding:5px;
+}
+
+.under_textarea{
+  width: 598px;
+  height:250px;
+  margin-top:20px;
 }
 .zone-de-text{
-  height: 160px;
-  border : solid 1px #4b4b4b;
-  border-top-color: black;
+  height: 150px;
+  width:598px;
+  border-left: solid 1px #4b4b4b;
+  border-right:solid 1px #4b4b4b;
+  /* border : solid 1px #4b4b4b;
+  border-top-color: black; */
+  /* background-color: red; */
 }
 .border{
   padding:2px 16px 2px 16px;
@@ -187,8 +293,9 @@ textarea {
   padding-left:16px;
   font-size:19px;
   font-weight:bold;
-  width: 600px;
+  width: 598px;
   height: 53px;
+  position:fixed ;
 }
 #accueil-main{
   display:flex;
@@ -198,23 +305,62 @@ textarea {
   height: 53px;
   text-align: center;
 }
-#star-main{
+.bouton_tweeter{
+  height:38px ;
+  width:92px ;
+  border-radius:24px ;
+  background-color:#0e4d77 ;
+  color:#7f7f7f;
+  text-align:center;
+  padding-top:8px;
+  font-size: 18px;
+  font-weight:bold;
+  margin-bottom:12px;
+  margin-left:490px;
 
-} 
+}
+.grey{
+  color:grey;
+}
+.bold{
+  font-weight:500; 
+}
+
+.tweet1{
+  height:395.5px ;
+  padding: 12px 16px 0px 16px;
+  font-size:15px;
+}
+.hashtag{
+  color:#1D9BF0;
+}
+.hashtag:hover{
+  text-decoration: underline ;
+}
+
+.imgtweet1{
+  float: left;
+  width:504px;
+  height:283.5px;
+  border-radius:12px;
+  border:solid 1px #4b4b4b;
+  margin-left:48.5px;
+  padding-right:12px;
+}
+.auteur_tweet1{
+  
+}
 
 
 
 
 
+/*   BARRE DE DROITE   */
+
+/*   Barre de recherche   */
 
 
-
-/*BARRE DE DROITE*/
-
-/* BARRE DE RECHERCHE*/
-
-
-/* TENDANCES*/
+/*   Tendances pour vous   */
 .tendances_pour_vous {
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -262,7 +408,7 @@ tendances_pour_vous__colonne_bas{
 .tendances_pour_vous__stat{
   font-size: 13px;
   font-weight: 400;
-  color: #6E767D;  
+  color: #6E767D;
 }
 
 .positionnement{
@@ -279,8 +425,8 @@ tendances_pour_vous__colonne_bas{
 }
 
 
-/* SUGGESTIONS */
 
+/* Suggestions d'abonnements */
 .suggestions{
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -349,14 +495,17 @@ tendances_pour_vous__colonne_bas{
 
 .hollow_suggestions:hover{
   cursor: pointer;
-  background-color:rgba(255,255,255,0.8); 
+  background-color:rgba(255,255,255,0.8);
 }
 
 .hollow_bouton:hover{
   cursor: pointer;
-  background-color:rgba(255,255,255,0.8); 
+  background-color:rgba(255,255,255,0.8);
 }
 
+
+
+/*Politique de Confidentialité*/
 .politique{
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(110,118,125);
@@ -364,14 +513,20 @@ tendances_pour_vous__colonne_bas{
   font-size:13px;
 }
 
-a:hover {
+.politique a:hover {
   text-decoration: underline;
   font-size:13px;
-} 
+}
 
-  
-  /* 
-#full-right{
+.politique2{
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(110,118,125);
+  font-size:13px;
+}
+
+.right-main{
+  width: 31%;
+  height: 100%;
   position: fixed;
-  margin-left:31%+620px;
-} */
+  left: calc(31% + 620px);
+}
