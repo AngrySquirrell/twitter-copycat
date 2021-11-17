@@ -18,7 +18,7 @@ To try our code,<br>
 Or you can try it and modify on CodePen : <br>
 https://codepen.io/angrysquirrell/pen/YzxdYvd <br>
 ```diff
-! (However, images will be missing ```¯\_(ツ)_/¯``` )`
++ (However, images will be missing ```¯\_(ツ)_/¯``` )`
 ```
 
 
@@ -69,11 +69,12 @@ To add any tweets use the following steps :
 
  - Make sure to change in every comment and uncomment it (remove the <!-- # -->)
  - Paste your home-made code between the mentionning beacons in index.html (line ~244) 
+![plot](./assets/img/howto.PNG)
+
  - Here we go, you added a new tweet ! Well done :)
-<br><br>
-  ```diff
+```diff
   - /!\ Make sure to keep the "" when there is some !
-  ```
+```
 
 ## Architecture
 
@@ -82,6 +83,7 @@ assets/<br>
 ├─ css/<br>
 │  ├─ style.css<br>
 ├─ img/<br>
+│  ├─ howto.PNG<br>
 │  ├─ pp_gaut123456.jpg<br>
 │  ├─ pp_moudjanito.png<br>
 │  ├─ pp_zevent.jpg<br>
