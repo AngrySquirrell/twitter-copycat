@@ -1,7 +1,5 @@
 # Twitter Copycat
 
-## Why
-
 This project take parts in an educational basis, to learn easy an advanced feature of HTML5 CSS3. <br>
 There is actually the first main page of Twitter
 
@@ -79,6 +77,7 @@ To add any tweets use the following steps :
 ## Architecture
 
 index.html<br>
+favicon.png<br>
 assets/<br>
 ├─ css/<br>
 │  ├─ style.css<br>
@@ -95,7 +94,6 @@ assets/<br>
 │  ├─ tweet2.jpg<br>
 │  ├─ twitzevent.jpg<br>
 │  ├─ Zevent.png<br>
-favicon.png<br>
 
 
 ## Who ?
