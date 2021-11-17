@@ -20,7 +20,7 @@ https://codepen.io/angrysquirrell/pen/YzxdYvd <br>
 ```diff
 + (However, images will be missing ```¯\_(ツ)_/¯``` )`
 ```
-
+![plot](./assets/img/look.PNG)
 
 ## Future updates
 
@@ -84,6 +84,7 @@ assets/<br>
 │  ├─ style.css<br>
 ├─ img/<br>
 │  ├─ howto.PNG<br>
+│  ├─ look.PNG<br>
 │  ├─ pp_gaut123456.jpg<br>
 │  ├─ pp_moudjanito.png<br>
 │  ├─ pp_zevent.jpg<br>
