@@ -12,11 +12,14 @@ To try our code,<br>
  - Unpack it
  - Run the HTML file
 <br><br>
- <font color="red">/!\ Make sure to keep every file in the same folder, unless it will break it.</font>
-
+```diff
+- /!\ Make sure to keep every file in the same folder, unless it will break it.
+```
 Or you can try it and modify on CodePen : <br>
 https://codepen.io/angrysquirrell/pen/YzxdYvd <br>
-(However, images will be missing ```¯\_(ツ)_/¯``` )
+```diff
++ (However, images will be missing ```¯\_(ツ)_/¯``` )`
+```
 
 
 ## Future updates
@@ -65,15 +68,33 @@ To add any tweets use the following steps :
   ```
 
  - Make sure to change in every comment and uncomment it (remove the <!-- # -->)
- - Paste your home-made code between the mentionning beacons (line ~244)
+ - Paste your home-made code between the mentionning beacons in index.html (line ~244) 
  - Here we go, you added a new tweet ! Well done :)
+<br><br>
+  ```diff
+  - /!\ Make sure to keep the "" when there is some !
+  ```
+
+## Architecture
+
+index.html<br>
+assets/<br>
+├─ css/<br>
+│  ├─ style.css<br>
+├─ img/<br>
+│  ├─ pp_gaut123456.jpg<br>
+│  ├─ pp_moudjanito.png<br>
+│  ├─ pp_zevent.jpg<br>
+│  ├─ ppgotaga.png<br>
+│  ├─ pptweet1.png<br>
+│  ├─ stars.png<br>
+│  ├─ tweet1.jfif<br>
+│  ├─ tweet2.jpg<br>
+│  ├─ twitzevent.jpg<br>
+│  ├─ Zevent.png<br>
+favicon.png<br>
 
 
-
-
-
- 
- 
 ## Who ?
 
 Project made with love by:
