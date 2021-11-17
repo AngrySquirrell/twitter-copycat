@@ -13,7 +13,7 @@ To try our code,<br>
  - Run the HTML file
 <br><br>
 ```diff
-- /!\ Make sure to keep every file in the same folder, unless it will break it.
+- /!\ Make sure to keep every file in the same folder, unless it won't work.
 ```
 Or you can try it and modify on CodePen : <br>
 https://codepen.io/angrysquirrell/pen/YzxdYvd <br>
