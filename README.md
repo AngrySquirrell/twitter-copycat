@@ -16,7 +16,7 @@ To try our code,<br>
 Or you can try it and modify on CodePen : <br>
 https://codepen.io/angrysquirrell/pen/YzxdYvd <br>
 ```diff
-! (However, images will be missing ```¯\_(ツ)_/¯``` )`
+! (However, images will be missing `¯\_(ツ)_/¯` )`
 ```
 ![plot](./assets/img/look.PNG)
 
