@@ -108,4 +108,4 @@ Project made with love by:
 
 ```gaut123456``` aka Gauthier Duffier as Developper & Happiness Manager,
 
-Using HTML5 & CSS3
+Using HTML5 & CSS3 (no JS)
