@@ -65,7 +65,7 @@ To add any tweets use the following steps :
         </div>  
   ```
 
- - Make sure to change in every comment and uncomment it (remove the "<!-- ## -->")
+ - Make sure to change in every comment and uncomment it (remove the `<!-- ## -->`)
  - Paste your home-made code between the mentionning beacons in index.html (line ~244) 
 ![plot](./assets/img/howto.PNG)
 
